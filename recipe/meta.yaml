@@ -1,6 +1,6 @@
 {% set name = "radical.pilot" %}
-{% set version = "0.50.6" %}
-{% set sha256 = "83e004a31f1b41b63490b0ac46a8d6aeb0c74ccf2453250348c4e9f40a1a43f8" %}
+{% set version = "0.50.7" %}
+{% set sha256 = "b3365fddba2050ff75dffebc531bfa389f6677068ff9e939df69ecd7204d8cfd" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
