@@ -21,7 +21,7 @@ requirements:
   run:
     - python
     - saga-python
-    - pymongo 2.8
+    - pymongo
     - radical.utils
     - msgpack-python
     - pyzmq
