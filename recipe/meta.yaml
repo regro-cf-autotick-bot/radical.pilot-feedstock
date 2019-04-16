@@ -10,7 +10,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: True  # [py3k or win]
 
@@ -20,13 +20,15 @@ requirements:
     - pip
   run:
     - python
-    - saga-python
+    - radical.saga >=0.60
     - pymongo
-    - radical.utils
+    - radical.utils >=0.60
     - msgpack-python
     - pyzmq
     - python-hostlist
     - ntplib
+    - netifaces
+    - setproctitle
     
 test:
   imports:
