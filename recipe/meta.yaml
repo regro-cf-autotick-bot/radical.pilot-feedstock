@@ -1,6 +1,6 @@
 {% set name = "radical.pilot" %}
-{% set version = "0.50.17" %}
-{% set sha256 = "e4288ec5f291f203cac9aab9c94602a06bf5d3aa6911ee8d0032b782efc6f353" %}
+{% set version = "0.72.2" %}
+{% set sha256 = "2d9168a19d14c58baad92d102d2199a7904a443c1cb9a5f09871f9a4951e3fc5" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -20,13 +20,15 @@ requirements:
     - pip
   run:
     - python
-    - saga-python
+    - radical.saga >=0.60
     - pymongo
-    - radical.utils
+    - radical.utils >=0.60
     - msgpack-python
     - pyzmq
     - python-hostlist
     - ntplib
+    - netifaces
+    - setproctitle
     
 test:
   imports:
