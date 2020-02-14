@@ -1,6 +1,6 @@
 {% set name = "radical.pilot" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "b6c9ba48ac4fa8ec47bd688c2cd2084d86542ed593b7ffa35a201eb8cd2139e0" %}
+{% set version = "1.1.1" %}
+{% set sha256 = "945367674dc67e19af4a44f7632ac2ff69c8a9c95dd6e034c59cbcc29c46f784" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -10,7 +10,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: True  # [py2k or win]
 
@@ -22,7 +22,7 @@ requirements:
     - python
     - radical.saga >=1.0.0
     - pymongo
-    - radical.utils >=1.0.0
+    - radical.utils >=1.1.0
     - msgpack-python
     - pyzmq
     - python-hostlist
