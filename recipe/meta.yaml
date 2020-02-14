@@ -22,7 +22,7 @@ requirements:
     - python
     - radical.saga >=1.0.0
     - pymongo
-    - radical.utils >=1.0.0
+    - radical.utils >=1.1.0
     - msgpack-python
     - pyzmq
     - python-hostlist
