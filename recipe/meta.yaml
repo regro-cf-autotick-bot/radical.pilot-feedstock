@@ -1,6 +1,6 @@
 {% set name = "radical.pilot" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "945367674dc67e19af4a44f7632ac2ff69c8a9c95dd6e034c59cbcc29c46f784" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "b70f2b3cf40e040e8db1ba2aad07a2a422d7d16653875c657b05d4d01e6f7340" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  skip: True  # [py2k or win]
+  skip: true  # [py2k or win]
 
 requirements:
   host:
@@ -29,17 +29,17 @@ requirements:
     - ntplib
     - netifaces
     - setproctitle
-    
+
 test:
   imports:
     - radical.pilot
-  
+
 about:
   home: http://radical-cybertools.github.io/radical-pilot/
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
-  summary: 'RADICAL-Pilot (RP) is a Pilot Job system written in Python'
+  summary: RADICAL-Pilot (RP) is a Pilot Job system written in Python
   description: |
     RADICAL-Pilot is a flexible Pilot System that provides a simple and scalable 
     approach for executing many concurrent simulations and their data requirements 
