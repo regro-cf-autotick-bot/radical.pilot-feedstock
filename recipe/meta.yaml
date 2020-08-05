@@ -1,6 +1,6 @@
 {% set name = "radical.pilot" %}
-{% set version = "1.4.1" %}
-{% set sha256 = "cad10f5998d8389fe446372ce02b03765c4940f389c3ebc7e68421d5219ff12d" %}
+{% set version = "1.5.1" %}
+{% set sha256 = "3f2fffe2969c6cda17e1b994350245837bfd771ba7a56aac4de7ad3c2e39ef27" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -10,7 +10,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [py2k or win]
 
